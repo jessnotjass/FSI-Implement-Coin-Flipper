@@ -24,7 +24,12 @@ const getTailsPercentage = () => (
     (scoreTails / totalFlips) * 100
 )
 
-document.addEventListener('DOMContentLoaded', function () {
+// Bonus Challenge - Dice Roll
+const getDiceRoll = () => (
+    Math.ceil(Math.random() * 6)
+)
+
+document.addEventListener('DOMContentLoaded', () => {
     // This is just a sanity check to make sure your JavaScript script is getting loaded
     // You can remove it once you see it in your browser console in the developer tools
 
@@ -72,4 +77,12 @@ document.addEventListener('DOMContentLoaded', function () {
         tablePercentTails.textContent = '0'
         tablePercentHeads.textContent = '0'
     })
+
+    // Bonus Challenge
+    // buttonFlip.addEventListener('click', () => {
+    //     let currentRoll = getDiceRoll()
+    //     coin.src = `./assets/images/dice/dice${currentRoll}.png`
+    //     coin.alt=`Image a die with a value of ${currentRoll}`
+    // })
+
 })
