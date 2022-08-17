@@ -39,21 +39,21 @@ button {
     border-radius: 10px;
 }
 
-#flip,
+#buttonFlip,
 #roll {
     background: linear-gradient(to bottom left, lightblue, white);
 }
 
-#flip:hover,
+#buttonFlip:hover,
 #roll:hover {
     background: linear-gradient(to bottom left, darkblue, lightblue);
 }
 
-#clear {
+#buttonClear {
     background: linear-gradient(to bottom left, orange, white);
 }
 
-#clear:hover {
+#buttonClear:hover {
     background: linear-gradient(to bottom left, red, orange);
 }
 
