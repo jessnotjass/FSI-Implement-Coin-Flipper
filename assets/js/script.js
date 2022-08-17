@@ -12,10 +12,6 @@ let scoreHeads = 0
 let scoreTails = 0
 let totalFlips = 0
 
-const randomValue = () => (
-    Math.random()
-)
-
 const getHeadsPercentage = () => (
     (scoreHeads / totalFlips) * 100
 )
@@ -48,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // TODO: Update the display of each table cell
     buttonFlip.addEventListener('click', () => {
         totalFlips++
-        if (randomValue() < 0.5) {
+        if (Math.random() < 0.5) {
             scoreTails++
             coin.src = './assets/images/penny-tails.jpg'
             coin.alt = 'Image of a coin on the tails side.'
